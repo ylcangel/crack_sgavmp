@@ -1,0 +1,9 @@
+struct AvmpHandler { // 共13种
+	void* handler;
+	// 0x20001, 0x20002, 0x20003, 0x20004, 0x20010, 0x20011, 
+	// 0x20012, 0x20013, 0x20014, 0x20015, 0x20016, 0x20017, 
+	// 0x20018
+	int vtype; 
+	struct AvmpHandler* prev;
+	struct AvmpHandler* next;
+};
